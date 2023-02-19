@@ -1,13 +1,13 @@
 {
   "name": "virtuoso",
   "version": "1.0.0",
-  "description": "Virtuoso -  Group 6 application for OSU Coding Bootcamp Project #2",
+  "description": "Virtuoso -  A Place for Musical Talent to Connect",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "watch": "nodemon server.js",
-    "seed": "node seeds/seed.js"
+    "seed": "node seeds/index.js"
   },
   "repository": {
     "type": "git",
