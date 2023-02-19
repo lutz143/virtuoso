@@ -18,8 +18,40 @@
       <a class="mx-2 navbar-brand" href="/">
        <div id="title"> Virtuoso </div> 
       </a>
+    </nav>
+        <nav class="nav-options">  
+      <div class="nav-left-section">
+        <div class="hamburger-menu">
+          <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+            <g
+              fill="none"
+              stroke="white"
+              stroke-width="2.5"
+              stroke-linecap="round"
+            >
+              <path d="M 48,43.999716 L 70.943724,44.000284" />
+              <path d="M 48,51.999716 L 70.943724,52.000284" />
+              <path d="M 48,60.999716 L 70.943724,61.000284" />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="nav-middle-section">
+        {{#if logged_in}}
+        <a href="/" id="home-button" type="submit">Home</a>
+        <a href="/band-profile" id="dashboard-button" type="submit">Profile</a>
+      </div>
+      <div class="nav-right-section">
+        <button id="logout-button" type="submit">Logout</button>
+      </div>
+        {{else}}
+      <div class="nav-right-section">
+        <a href="/login" id="login-button" type="submit">Login</a>
+      </div>
+        {{/if}}
+    </nav>
 
-      <form class="d-inline-flex">
+      {{!-- <form class="d-inline-flex">
         {{#if logged_in}}
         <a href="/" class="btn btn-light my-2 m-sm-1" id="home-button" type="submit">Home</a>
         <a href="/band-profile" class="btn btn-light my-2 m-sm-1" id="dashboard-button" type="submit">Profile</a>
@@ -27,8 +59,8 @@
         {{else}}
         <a href="/login" class="btn btn-success my-2 m-sm-1" id="login-button" type="submit">Login</a>
         {{/if}}
-      </form>
-    </nav>
+      </form> --}}
+
   </header>
 
   <main class='p-1 mb-4 text-black text-center'>

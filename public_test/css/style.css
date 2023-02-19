@@ -1,8 +1,8 @@
 /* establish global variable */
-:root{
+:root {
   --muktaFamily:  Mukta, Arial, Helvetica, sans-serif;
   --darkBlue: rgb(40, 68, 102);
-  --lightBlue: rgb(50, 171, 218);
+  --lightBlue: rgb(51, 147, 211);
   --turquoise: rgb(11, 165, 163);
   --lightGray: rgba(169, 169, 169, 0.404);
   --darkGray: rgb(143, 143, 143);
@@ -10,10 +10,9 @@
   --darkBlueGray: rgba(50, 61, 79);
 }
 
-#header{
+#header {
   height: 30vh;
-  width: 100%;
-  background: #fff url('/img/guitars-gf5520d351_640.jpg');
+  background: #fff url('/public_test/guitars-gf5520d351_640.jpg');
   z-index: 100;
 }
 
@@ -59,21 +58,6 @@
   margin-left: 50px;
 }
 
-#title{
-  font-size: 24pt;
-  position: absolute;
-  top: 0px;
-}
-
-#title:hover{
-  font-size: 24pt;
-  position: absolute;
-  top: 0px;
-  color: black;
-  font-style: italic;
-  cursor: pointer;
-}
-
 body {
   background-color: #f9f9fa;
 }
@@ -95,17 +79,10 @@ body {
 
 .card-sub {
   cursor: move;
+  border-style: dashed;
   background-color: var(--lightBlue);
-  border-radius: 8px;
   -webkit-box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.05), 0 -2px 1px -2px rgba(0, 0, 0, 0.04), 0 0 0 -1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.05), 0 -2px 1px -2px rgba(0, 0, 0, 0.04), 0 0 0 -1px rgba(0, 0, 0, 0.05)
-}
-
-.employee-name-profile {
-  position: relative;
-  color: var(--darkGray);
-  font-size: 1.2rem;
-  top: -54px;
 }
 
 .card-header {
@@ -145,8 +122,7 @@ body {
   padding: 2.5px;
 }
 
-.card-title {
-  font-style: italic;
+.employee-name {
   position: relative;
   color: var(--white);
   top: -58px;
