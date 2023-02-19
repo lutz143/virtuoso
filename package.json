@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RetroTechCode/virtuoso.git"
+    "url": "git+https://github.com/lutz143/virtuoso.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RetroTechCode/virtuoso/issues"
+    "url": "https://github.com/lutz143/virtuoso/issues"
   },
-  "homepage": "https://github.com/RetroTechCode/virtuoso#readme",
+  "homepage": "https://github.com/lutz143/virtuoso#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "chart.js": "^4.2.1",
