@@ -6,8 +6,11 @@
   --turquoise: rgb(11, 165, 163);
   --lightGray: rgba(169, 169, 169, 0.404);
   --darkGray: rgb(143, 143, 143);
+  --salmon: rgb(255, 143, 132);
+  --sage: rgb(128, 125, 110);
   --white: rgba(255, 255, 255, 0.95);
   --darkBlueGray: rgba(50, 61, 79);
+
 }
 
 #header {
@@ -18,20 +21,40 @@
 
 .nav-options {
   margin: 0 5px 15px 5px;
-  padding-top: 10px;
+  height: 38px;
   display: flex;  
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  transition: all 0.25s ease-in;
 }
+
+/* style the nav links and prep for hover */
+.nav-options a{
+  color: var(--darkBlue);
+  font-weight: 400;
+  padding: 5px 10px 0.5em;
+  margin-right: 20px;
+  text-decoration: none; 
+  background-image: linear-gradient(200deg, var(--salmon) 0%, var(--salmon) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.25em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+}
+
+/* style the nav links on hover */
+/* .nav-middle-section a:hover{
+  color: var(--white);
+  background-size: 100% 100%;  
+} */
 
 .nav-left-section {
   height: 0;
 }
 
 .hamburger-menu{
-  /* margin-top: 0; */
   color: var(--white);
   height: 24px;
   margin-left: 25px;
@@ -46,17 +69,45 @@
   width: 95px;
 }
 
+.hamburger-menu:hover {
+  box-shadow: 0 0 2.5px 3.5px rgba(0, 0, 0, 0.2);
+}
+
 .nav-middle-section {
   margin-left: -95px;
 }
 
 #home-button {
+  display: none;
+  transition: all 0.25s ease-in;
   margin-right: 50px;
+  color: var(--turquoise);
+  font-weight: 600;
+  font-style: italic;
+}
+
+#home-button:hover {
+  color: var(--white);
+  background-size: 100% 90%;
 }
 
 #dashboard-button {
+  /* transition: all 0.25s ease-in; */
   margin-left: 50px;
+  color: var(--turquoise);
+  font-weight: 600;
+  font-style: italic;
 }
+
+#dashboard-button:hover {
+  color: var(--white);
+  background-size: 100% 90%;
+}
+
+/* .nav-right-section {
+  transition: all 0.25s ease-in;
+  display: none;
+} */
 
 body {
   background-color: #f9f9fa;
