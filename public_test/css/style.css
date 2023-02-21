@@ -10,11 +10,11 @@
   --sage: rgb(128, 125, 110);
   --white: rgba(255, 255, 255, 0.95);
   --darkBlueGray: rgba(50, 61, 79);
-
 }
 
 #header {
   height: 30vh;
+  width: 100%;
   background: #fff url('/public_test/guitars-gf5520d351_640.jpg');
   z-index: 100;
 }
@@ -75,10 +75,11 @@
 
 .nav-middle-section {
   margin-left: -95px;
+  display: none;
+  transition: all 0.25s ease-in;
 }
 
 #home-button {
-  display: none;
   transition: all 0.25s ease-in;
   margin-right: 50px;
   color: var(--turquoise);
@@ -92,7 +93,6 @@
 }
 
 #dashboard-button {
-  /* transition: all 0.25s ease-in; */
   margin-left: 50px;
   color: var(--turquoise);
   font-weight: 600;
@@ -104,10 +104,10 @@
   background-size: 100% 90%;
 }
 
-/* .nav-right-section {
-  transition: all 0.25s ease-in;
+.nav-right-section {
   display: none;
-} */
+  transition: all 0.25s ease-in;
+}
 
 body {
   background-color: #f9f9fa;

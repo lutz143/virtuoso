@@ -36,19 +36,19 @@
           </svg>
         </div>
       </div>
+      {{#if logged_in}}
       <div class="nav-middle-section">
-        {{#if logged_in}}
         <a href="/" id="home-button" type="submit">Home</a>
         <a href="/band-profile" id="dashboard-button" type="submit">Profile</a>
       </div>
       <div class="nav-right-section">
-        <button id="logout-button" type="submit">Logout</button>
+        <a id="logout-button" type="submit">Logout</a>
       </div>
-        {{else}}
-      <div class="nav-right-section">
+      {{else}}
+      <div>
         <a href="/login" id="login-button" type="submit">Login</a>
       </div>
-        {{/if}}
+      {{/if}}
     </nav>
 
       {{!-- <form class="d-inline-flex">

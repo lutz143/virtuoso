@@ -4,20 +4,41 @@ $(document).ready(function() {
        $("#sortable").disableSelection();
 });
 
-// unhide the search input bar after user selects search from sidebar
-$(".hamburger").on("click", function(){
+// unhide the nav bar after user selects the hamburger menu
+// $(".hamburger").on("click", function(){
+//   const middleSectionEl = document.querySelector('.nav-middle-section');
+//   const rightSectionEl = document.querySelector('.nav-right-section');
+  
+//   if(rightSectionEl.style.display !=="none") {
+//     middleSectionEl.style.display = "none";
+//     rightSectionEl.style.display = "none";    
+//   } else {
+//     window.setTimeout(function(){
+//       middleSectionEl.style.display = "inline";
+//       rightSectionEl.style.display = "inline";
+//     },100); //timed to match animation duration
+//   }
+// })
+
+
+// unhide the nav bar after user selects the hamburger menu
+const openNavHandler = async (event) => {
+  event.preventDefault();
+
   const middleSectionEl = document.querySelector('.nav-middle-section');
   const rightSectionEl = document.querySelector('.nav-right-section');
-  // const hideEl = document.querySelector('.hide');
 
-  if(middleSectionEl.style.display !=="none") {
+  if(rightSectionEl.style.display !=="none") {
     middleSectionEl.style.display = "none";
-    rightSectionEl.style.display = "none";
-    // hideEl.style.display = "none";
+    rightSectionEl.style.display = "none";    
   } else {
-    middleSectionEl.style.display = "flex";
-    rightSectionEl.style.display = "flex";
-    // hideEl.style.display = "flex";
-    // searchBarEl.focus();
+    window.setTimeout(function(){
+      middleSectionEl.style.display = "inline";
+      rightSectionEl.style.display = "inline";
+    },100); //timed to match animation duration
   }
-})
+};
+
+document
+  .querySelector('.hamburger')
+  .addEventListener('click', openNavHandler);
