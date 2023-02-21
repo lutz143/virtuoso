@@ -65,6 +65,7 @@
 
 .hamburger-menu:hover {
   box-shadow: 0 0 2.5px 3.5px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in;  
 }
 
 .nav-middle-section {
